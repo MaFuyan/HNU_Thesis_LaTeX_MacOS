@@ -1,0 +1,80 @@
+%!TEX encoding = UTF-8 Unicode
+%!TEX program = xelatex
+
+\documentclass[doctor]{hnuthesis}
+\usepackage{subfigure}
+\usepackage{amsmath}
+\usepackage{algorithmicx,algpseudocode}
+
+
+\graphicspath{{figures/}}
+
+% 学校代码
+\hnucode{10532}
+% 学校名称
+\hnuname{湖南大学}
+\enhnuname{Hunan University}
+% 中图分类号
+\clc{TP391}         
+% 密级       
+\secrettext{普通}           
+
+% 标题
+\title{湖南大学研究生学位论文撰写规范}
+\entitle{Study on XX. }  
+% 作者
+\author{作者}
+\enauthor{Author}
+% 学号
+\authorid{B1809Z0000}      
+% 学院
+\college{研究生院}
+% 专业
+\major{专业名称} 
+\enmajor{Theory of What}
+%学士学位获得学校，年份
+\enbachelor{B.E.~(Hunan University)201x}
+
+\endoctor{Master of engineering}
+% 研究方向
+\workon{浑水摸鱼}
+% 导师
+\supervisor{某某\ 教授}
+\ensupervisor{Professor MM}
+% 论文提交、答辩日期
+\submitdate{二〇二二年x月xx日}
+\defensedate{二〇二X年x月xx日}
+\endate{June, 2021}
+% 答辩委员会主席
+\chair{待定}
+
+\begin{document}
+% 封面、原创性声明
+\maketitle
+
+% 摘要
+\input{chapters/abstract}
+% 目录
+\tableofcontents
+% 插图附表索引
+\listoffigures
+\listoftables
+
+% 正文章节
+\mainmatter
+\input{chapters/ch1}
+\input{chapters/ch2}
+\input{chapters/ch3}
+\input{chapters/ch4}
+\input{chapters/ch5}
+\input{chapters/summary}
+\bibliography{references}
+
+\appendix
+\input{chapters/publications}
+\input{chapters/projects}
+
+\backmatter
+\input{chapters/acknowledgements}
+
+\end{document}
